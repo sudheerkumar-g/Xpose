@@ -9,7 +9,8 @@ import torchvision.transforms as transforms
 import torch.nn as nn
 import torchvision.models as models
 import sqlite3
-
+import os
+import gdown
 # ---------- Initialize FastAPI ----------
 app = FastAPI()
 
