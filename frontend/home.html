@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XPOSE</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="assets/fav.jpg">
+</head>
+<body> 
+  <div class="background">
+    <div class="container">
+      <h1>Image Analysis Tool</h1>
+      <p>Upload an image to analyze if it's real, AI-generated, morphed, or edited.</p>
+    
+      <div class="upload-section">
+        <input type="file" id="imageUpload" accept="image/*" hidden />
+        <label for="imageUpload" class="upload-label">
+          <span id="uploadText">Choose an image</span>
+          <img id="previewImage" src="#" alt="Preview" style="display: none;" />
+        </label>
+      </div>
+
+      <button id="analyzeButton" disabled>Analyze Image</button>
+
+      <div class="result-section">
+        <h2>Analysis Result</h2>
+        <p id="resultText">Your result will appear here.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

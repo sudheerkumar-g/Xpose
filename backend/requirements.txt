@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+torch
+torchvision
+pillow
+python-multipart
+aiofiles
+jinja2
+numpy
+scikit-learn
