@@ -9,3 +9,4 @@ aiofiles
 jinja2
 numpy
 scikit-learn
+gdown
