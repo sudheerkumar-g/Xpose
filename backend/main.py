@@ -53,6 +53,8 @@ class LoginUser(BaseModel):
 model = models.resnet50(pretrained=False)
 model.fc = nn.Linear(model.fc.in_features, 3)
 state_dict = torch.load("xpose_epoch_8.pth", map_location=torch.device("cpu"))
+if not os.path.exists(model_path):
+    gdown.download("https://drive.google.com/uc?id=YOUR_FILE_ID", model_path, quiet=False)
 model.load_state_dict(state_dict)
 model.eval()
 
